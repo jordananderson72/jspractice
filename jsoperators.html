@@ -8,26 +8,18 @@
 </head>
 
 <h2>hello</h2>
-<p> i enjoy cheese, i hope you enjoyed those delicious javascript alerts!</p>
+<p> i enjoy cheese, i hope you enjoyed those delicious javascript prompts!</p>
 <body>
     <script>
         "use strict";
         
-        // No effect on numbers
-        let x = 1;
-        alert ( +x);
 
-        let y = -2;
-        alert ( +y);
 
-        //converts non-numbers
-        alert( +true);
-        alert( +"");
+let a = +prompt("First number?", 1);
+let b = +prompt("Second number?", 2);
 
-        // both values converted to numbers before the binary plus
-        let apples = "2";
-        let oranges = "3";
-        alert( +apples + +oranges);
+alert(a + b); // 12
+
     </script>
 </body>
 </html>
